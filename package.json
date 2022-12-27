@@ -12,6 +12,8 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "markdown-it-footnote": "^3.0.3",
+    "prettier": "^2.8.1",
     "vitepress": "1.0.0-alpha.33",
     "vue": "^3.2.45"
   },
@@ -21,5 +23,9 @@
         "@algolia/client-search"
       ]
     }
+  },
+  "prettier": {
+    "printWidth": 120,
+    "proseWrap": "always"
   }
 }

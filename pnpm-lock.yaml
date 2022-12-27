@@ -1,10 +1,14 @@
 lockfileVersion: 5.4
 
 specifiers:
+  markdown-it-footnote: ^3.0.3
+  prettier: ^2.8.1
   vitepress: 1.0.0-alpha.33
   vue: ^3.2.45
 
 devDependencies:
+  markdown-it-footnote: 3.0.3
+  prettier: 2.8.1
   vitepress: 1.0.0-alpha.33
   vue: 3.2.45
 
@@ -21,6 +25,9 @@ packages:
     peerDependencies:
       '@algolia/client-search': '>= 4.9.1 < 6'
       algoliasearch: '>= 4.9.1 < 6'
+    peerDependenciesMeta:
+      '@algolia/client-search':
+        optional: true
     dependencies:
       '@algolia/autocomplete-shared': 1.7.2
       algoliasearch: 4.14.3
@@ -606,6 +613,10 @@ packages:
       sourcemap-codec: 1.4.8
     dev: true
 
+  /markdown-it-footnote/3.0.3:
+    resolution: {integrity: sha512-YZMSuCGVZAjzKMn+xqIco9d1cLGxbELHZ9do/TSYVzraooV8ypsppKNmUJ0fVH5ljkCInQAtFpm8Rb3eXSrt5w==}
+    dev: true
+
   /nanoid/3.3.4:
     resolution: {integrity: sha512-MqBkQh/OHTS2egovRtLk45wEyNXwF+cokD+1YPf9u5VfJiRdAiRwB2froX5Co9Rh20xs4siNPm8naNotSD6RBw==}
     engines: {node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1}
@@ -631,6 +642,12 @@ packages:
 
   /preact/10.11.3:
     resolution: {integrity: sha512-eY93IVpod/zG3uMF22Unl8h9KkrcKIRs2EGar8hwLZZDU1lkjph303V9HZBwufh2s736U6VXuhD109LYqPoffg==}
+    dev: true
+
+  /prettier/2.8.1:
+    resolution: {integrity: sha512-lqGoSJBQNJidqCHE80vqZJHWHRFoNYsSpP9AjFhlhi9ODCJA541svILes/+/1GM3VaL/abZi7cpFzOpdR9UPKg==}
+    engines: {node: '>=10.13.0'}
+    hasBin: true
     dev: true
 
   /resolve/1.22.1:
