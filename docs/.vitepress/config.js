@@ -1,7 +1,10 @@
 export default {
+  lang: "en-CA",
   title: "A (Much) Worse Plutarch",
   description: "A random brain dump of Internal Compiler Error, I am a much worse version of Plutarch.",
+  lastUpdated: true,
   themeConfig: {
+    lastUpdatedText: "Last Updated At",
     sidebar: [
       {
         text: "Personal Dump",
@@ -14,6 +17,10 @@ export default {
       {
         text: "Controversial",
         items: [{ text: "SENG at UoG is a Scam", link: "/seng-at-uog-is-a-scam" }],
+      },
+      {
+        text: "Co-op Reports",
+        items: [{ text: "Fall 2022", link: "/co-op-report-0" }],
       },
     ],
   },
