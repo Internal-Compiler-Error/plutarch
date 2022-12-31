@@ -28,7 +28,7 @@ world to safely request and communicate information, our systems allow for the d
 amount of information and only reveal that information for a period agreed upon by both parties, once the time expires,
 information cannot be obtained anymore without a new round of requests. This project was largely inherited and we worked
 with an external software consultancy company, I cannot tell you which but it was large and famous
-:slightly*smiling_face: and we did \_not* enjoy working with them :upside_down_face:.
+:slightly_smiling_face: and we did not enjoy working with them :upside_down_face:.
 
 The second project was much smaller in scope and it was greenfield. Although only about 3 weeks were spent on the
 project including researching and presenting, it was the highlight of the work term and I got to play with technologies

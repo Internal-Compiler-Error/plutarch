@@ -2,21 +2,15 @@ export default {
   lang: "en-CA",
   title: "A (Much) Worse Plutarch",
   description: "A random brain dump of Internal Compiler Error, I am a much worse version of Plutarch.",
+  lastUpdated: true,
   head: [
     ["script", { async: true, src: "https://www.googletagmanager.com/gtag/js?id=G-JN26VM45TW" }],
     [
       "script",
       {},
-      `
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        
-        gtag('config', 'G-JN26VM45TW');
-      `,
+      "window.dataLayer = window.dataLayer || [];\nfunction gtag(){dataLayer.push(arguments);}\ngtag('js', new Date());\ngtag('config', 'G-JN26VM45TW');",
     ],
   ],
-  lastUpdated: true,
   themeConfig: {
     lastUpdatedText: "Last Updated At",
     sidebar: [
