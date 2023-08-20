@@ -4,4 +4,4 @@ A collection of random stuff I wanted to write for various reasons:
 - mandatory (coop reports)
 - ranting
 
-I imaine myself to be [Plutarch](https://en.wikipedia.org/wiki/Plutarch), but much shittier.
+I imagine myself to be [Plutarch](https://en.wikipedia.org/wiki/Plutarch), but much shittier.
