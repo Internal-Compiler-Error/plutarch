@@ -13,9 +13,9 @@
   "license": "ISC",
   "devDependencies": {
     "markdown-it-footnote": "^3.0.3",
-    "prettier": "^2.8.1",
+    "prettier": "^2.8.8",
     "vitepress": "1.0.0-alpha.33",
-    "vue": "^3.2.45"
+    "vue": "^3.3.4"
   },
   "pnpm": {
     "peerDependencyRules": {
