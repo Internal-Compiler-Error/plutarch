@@ -20,7 +20,13 @@ export default {
       },
       {
         text: "Technical(-ish) Posts When I Procrastinated",
-        items: [{ text: "Random Numbers Generations in C++", link: "/random-number-generation-in-c++" }],
+        items: [
+          { text: "Random Numbers Generations in C++", link: "/random-number-generation-in-c++" },
+          {
+            text: "Atomic Memory Ordering for People Used to ACID Isolation levels",
+            link: "/atomic-memory-order-in-the-lens-of-acid-isolation.md",
+          },
+        ],
       },
       {
         text: "Controversial",
