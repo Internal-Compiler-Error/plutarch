@@ -12,6 +12,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "firebase-tools": "^13.5.1",
     "markdown-it-footnote": "^3.0.3",
     "prettier": "^2.8.8",
     "vitepress": "1.0.0-alpha.33",

@@ -26,6 +26,10 @@ export default {
             text: "Atomic Memory Ordering for People Used to ACID Isolation levels",
             link: "/atomic-memory-order-in-the-lens-of-acid-isolation.md",
           },
+          {
+            text: "Scripting Language Import is Strictly More Powerful than Compiled Languages Imports",
+            link: "/scripting-import-is-strictly-more-powerful.md"
+          },
         ],
       },
       {
