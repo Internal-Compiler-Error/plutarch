@@ -38,7 +38,10 @@ export default {
       },
       {
         text: "Co-op Reports",
-        items: [{ text: "Fall 2022", link: "/co-op-report-0" }],
+        items: [
+          { text: "Fall 2022", link: "/co-op-report-0" }, 
+          { text: "Summer 2023", link: "/co-op-report-1" },
+        ],
       },
     ],
   },
