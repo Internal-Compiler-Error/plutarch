@@ -41,6 +41,7 @@ export default {
         items: [
           { text: "Fall 2022", link: "/co-op-report-0" }, 
           { text: "Summer 2023", link: "/co-op-report-1" },
+          { text: "Winter 2024", link: "/co-op-report-2" },
         ],
       },
     ],
