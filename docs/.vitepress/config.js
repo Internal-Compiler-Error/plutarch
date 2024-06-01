@@ -30,6 +30,10 @@ export default {
             text: "Scripting Language Import is Strictly More Powerful than Compiled Languages Imports",
             link: "/scripting-import-is-strictly-more-powerful.md"
           },
+          {
+            text: "DNS On Modern Linux is a Mess",
+            link: "/modern-linux-dns-mess.md"
+          },
         ],
       },
       {
