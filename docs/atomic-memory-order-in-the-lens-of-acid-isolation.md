@@ -1,6 +1,6 @@
-# I am a title!
+# Atomic Memory Order In The Lens of Acid Isolation
 
-# WARNING
+## WARNING
 Atomic memory ordering is easy to get wrong. I am not an expert in this field, this should not be used as a reference.
 If you actually want to write lock-free data structures, please actually understand what each of them do.
 

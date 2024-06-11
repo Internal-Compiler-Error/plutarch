@@ -22,10 +22,10 @@ export default {
         text: "Technical(-ish) Posts When I Procrastinated",
         items: [
           { text: "Random Numbers Generations in C++", link: "/random-number-generation-in-c++" },
-          {
-            text: "Atomic Memory Ordering for People Used to ACID Isolation levels",
-            link: "/atomic-memory-order-in-the-lens-of-acid-isolation.md",
-          },
+          // {
+          //   text: "Atomic Memory Ordering for People Used to ACID Isolation levels",
+          //   link: "/atomic-memory-order-in-the-lens-of-acid-isolation.md",
+          // },
           {
             text: "Scripting Language Import is Strictly More Powerful than Compiled Languages Imports",
             link: "/scripting-import-is-strictly-more-powerful.md"
@@ -34,6 +34,10 @@ export default {
             text: "DNS On Modern Linux is a Mess",
             link: "/modern-linux-dns-mess.md"
           },
+          // {
+          //   text: "READ COMMITED won't save you from MySql Gap Locks",
+          //   link: "/mysql-read-commited-gap-lock.md"
+          // }
         ],
       },
       {
