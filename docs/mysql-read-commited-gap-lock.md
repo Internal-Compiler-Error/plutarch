@@ -13,11 +13,11 @@ broadly applies to almost all MySQL versions as this seems to be a core design d
 made.
 
 I wish to thank [Franck Pachot](https://twitter.com/FranckPachot) from
-[Yugabyte](https://www.yugabyte.com/) and [Eric HUNTER](https://twitter.com/EmericHUNT3R) from [db
-insider](db-insider.com), my [low effort
-tweet](https://x.com/IntrnlCmplrErr/status/1799236750981599661) somehow attracted the attention of
-them. In particular, Franck pointed me towards more resources and led to some revisions of this blog
-post.
+[Yugabyte](https://www.yugabyte.com/) and [Emeric
+HUNTER](https://twitter.com/EmericHUNT3R) from [db insider](db-insider.com), my
+[low effort tweet](https://x.com/IntrnlCmplrErr/status/1799236750981599661)
+somehow attracted the attention of them. In particular, Franck pointed me
+towards more resources and led to some revisions of this blog post.
 
 ## What is A Gap Lock
 Whenever you wish to select some set of rows in MySQL using a predicate involving inequality or
