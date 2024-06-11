@@ -35,7 +35,7 @@ export default {
             link: "/modern-linux-dns-mess.md"
           },
           {
-            text: "READ COMMITED won't save you from MySql Gap Locks",
+            text: "READ COMMITED won't save you from MySQL Gap Locks",
             link: "/mysql-read-commited-gap-lock.md"
           }
         ],
