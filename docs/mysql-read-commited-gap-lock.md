@@ -137,6 +137,9 @@ of the where clause can be matched, _even if it will just immediately release th
 checked_. Since the index isn't unique, InnoDB takes a lock on every row scanned, both the index and
 the row.
 
+If we commit both transactions, the above combination can, and have been observed to deadlock,
+despite they shouldn't be conflicting!
+
 ## Is MySQL in the wrong here?
 It's surprisingly hard to say whether MySQL should be "blamed" here. This is because 
 
