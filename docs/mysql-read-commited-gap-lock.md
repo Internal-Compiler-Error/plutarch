@@ -131,6 +131,12 @@ Step 6 will be stuck on trying to acquire the lock that step 5 held. If the dele
 doesn't rollback or commit in a short time, the selecting one will warn you about it took a long
 time to acquire the locks.
 
+This is due to the delete transaction holding up an exclusive lock on the `t_x` index, meanwhile,
+the select transaction is waiting to acquire the locks on the index so it can go check if the rest
+of the where clause can be matched, _even if it will just immediately release the lock once
+checked_. Since the index isn't unique, InnoDB takes a lock on every row scanned, both the index and
+the row.
+
 ## Is MySQL in the wrong here?
 It's surprisingly hard to say whether MySQL should be "blamed" here. This is because 
 
