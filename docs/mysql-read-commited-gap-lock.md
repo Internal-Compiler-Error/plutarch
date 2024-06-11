@@ -192,10 +192,9 @@ irrelavent or even harmful in another.
 Unless the database world can come toghther to settle on what should it do, we are forever stuck in
 unportable behaivour limbo.
 
-[^1]:   Postgres predicate locks in general do not block oconfigurations rather than taking lots of
-        locks, this advice is probably fine for Postgres.ther transactions, it's mostly for
+[^1]:   Postgres predicate locks in general do not block ther transactions, it's mostly for
         detecting searialization errors. Postgres in general exhibit less blocking compared to MySQL
         with InnoDB, a future post will also demonstrate this.
 [^2]:   Which is how I like to think it should be
 [^3]:   And perhaps by assication Yugabyte
-[^4]:   See Jepson, https://jepsen.io/analyses/mysql-8.0.34#repeatable-read
+[^4]:   See Jepsen, https://jepsen.io/analyses/mysql-8.0.34#repeatable-read
