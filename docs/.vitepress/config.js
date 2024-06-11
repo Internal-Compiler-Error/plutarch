@@ -34,10 +34,10 @@ export default {
             text: "DNS On Modern Linux is a Mess",
             link: "/modern-linux-dns-mess.md"
           },
-          // {
-          //   text: "READ COMMITED won't save you from MySql Gap Locks",
-          //   link: "/mysql-read-commited-gap-lock.md"
-          // }
+          {
+            text: "READ COMMITED won't save you from MySql Gap Locks",
+            link: "/mysql-read-commited-gap-lock.md"
+          }
         ],
       },
       {
