@@ -67,7 +67,7 @@ naively expected that MySQL's claims of snapshot based `REPEATABLE READ` would h
 behaviour to Postgres as they both claim to be MVCC based. This was the reason that prompted me to
 write the [low effort tweet](https://x.com/IntrnlCmplrErr/status/1799236750981599661). Section
 "Snapshot Isolation and Repeatable Read" and "Two-Phase Locking (2PL)" under chapter 7 of Martin
-Klepmann's _Designing Data Intensive Applications_ provides much more nuances. Still, it baffles me
+Kleppmann's _Designing Data Intensive Applications_ provides much more nuances. Still, it baffles me
 that InnoDB's behaviour looks more 2PL than MVCC.
 
 ## Gap Locks under `READ COMMITTED`
