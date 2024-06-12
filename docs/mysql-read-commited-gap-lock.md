@@ -51,14 +51,24 @@ This won't cause a deadlock by itself, but when a transaction is being blocked b
 deadlocks are much more likely to happen.
 
 ### MySQL's Idea of `REPEATABLE READ`
-The ANSI `REPEATABLE READ` can be losely undersood as it doesn't allow for phantom rows in addition
-to all the anomalies that `READ COMMITTED` should prevent. One way to implement `REPEATABLE READ`
-without much locking and blocking is to utilize MVCC version ids like Postgres. Although Postgres
-technically implements Snapshot Isolation, somewhat different than `REPEATABLE READ`[^4].
+The ANSI `REPEATABLE READ` can be losely undersood as it doesn't allow for ~~phantom rows~~ a read
+within the same transaction at different times to return different results in addition to all the
+anomalies that `READ COMMITTED` should prevent[^5]. One way to implement `REPEATABLE READ` without much
+locking and blocking is to utilize MVCC version ids like Postgres. Although Postgres technically
+implements Snapshot Isolation, somewhat different than the ANSI `REPEATABLE READ`[^4].
 
-Rather, it seems when involving non-unique indices, InnoDB performs much more locking than Postgres.
-MySQL historically has been heavily optimized for OLTP queries, and it seems it can't do anything
-slightly more OLAP in nature.
+MySQL also claims its `REPEATABLE READ` is based around snapshots, so one would expect it to behave
+similarly to Postgres. Rather, it seems when involving non-unique indices, InnoDB performs much more
+locking than Postgres. MySQL historically has been heavily optimized for OLTP queries, and it seems
+it can't do anything slightly more OLAP in nature.
+
+__Edit (Jun. 12, 2024):__ This subsection has more subtleties than I am comfortable of stating here. I
+naively expected that MySQL's claims of snapshot based `REPEATABLE READ` would have similar
+behaviour to Postgres as they both claim to be MVCC based. This was the reason that prompted me to
+write the [low effort tweet](https://x.com/IntrnlCmplrErr/status/1799236750981599661). Section
+"Snapshot Isolation and Repeatable Read" and "Two-Phase Locking (2PL)" under chapter 7 of Martin
+Klepmann's _Designing Data Intensive Applications_ provides much more nuances. Still, it baffles me
+that InnoDB's behaviour looks more 2PL than MVCC.
 
 ## Gap Locks under `READ COMMITTED`
 What if we are unsatisfied with the blocking performance of InnoDB, and we are
@@ -195,3 +205,5 @@ unportable behaviour limbo.
 [^2]:   Which is how I like to think it should be
 [^3]:   And perhaps by association Yugabyte
 [^4]:   See Jepsen, https://jepsen.io/analyses/mysql-8.0.34#repeatable-read
+[^5]:   An early version of this post __mistakenly__ stated that repeatable reads prevents phantoms.
+        I was confusing repeatable read with snapshot isolation.
