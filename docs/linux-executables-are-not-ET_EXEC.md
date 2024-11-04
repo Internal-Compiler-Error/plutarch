@@ -1,7 +1,7 @@
 ---
-title: "DNS on Modern Linux is a Mess"
+title: "Linux executables are not `ET_EXEC`"
 date:  2024-11-04T21:52:00UTC
-draft: true
+draft: false
 ---
 
 # Linux executables are not `ET_EXEC`

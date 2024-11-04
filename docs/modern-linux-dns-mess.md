@@ -1,7 +1,7 @@
 ---
 title: "DNS on Modern Linux is a Mess"
 date:  2024-06-01T20:52:00UTC
-draft: true
+draft: false
 ---
 
 # DNS on Modern Linux is a Mess
