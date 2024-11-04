@@ -37,6 +37,10 @@ export default {
           {
             text: "READ COMMITED won't save you from MySQL Gap Locks",
             link: "/mysql-read-commited-gap-lock.md"
+          },
+          {
+            text: "Linux executables are not ET_EXEC",
+            link: "/linux-executables-are-not-ET_EXEC.md"
           }
         ],
       },
