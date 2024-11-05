@@ -212,7 +212,7 @@ openat(AT_FDCWD, "/etc/gai.conf", O_RDONLY|O_CLOEXEC) = 3
 ```
 
 Hence, whether an ELF is `ET_EXEC` or `ET_DYN` tells you little about whether it's statically linked
-or not, and it tells you little about it's an executable or not. It should not be relied one.
+or not, and it tells you little about it's an executable or not. It should not be relied on.
 
 ## Can an ELF be both a library and an executable?
 Yes! Two major examples, `/usr/lib/libc.so.6` and `/usr/lib/ld-linux-x86-64.so.2` are mostly used as
