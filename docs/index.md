@@ -1,5 +1,3 @@
-# Blog of one computer science student from the University of Guelph
-
 You can find a collection of random stuff I wanted to write for various reasons:
 
 - procrastination (clearly the best use of time before exams is to write stuff :upside_down_face:)
