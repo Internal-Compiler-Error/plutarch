@@ -12,11 +12,11 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "firebase-tools": "^13.24.0",
+    "firebase-tools": "^13.35.1",
     "markdown-it-footnote": "^4.0.0",
     "prettier": "^2.8.8",
-    "vitepress": "^1.5.0",
-    "vue": "^3.5.12"
+    "vitepress": "^1.6.4",
+    "vue": "^3.5.34"
   },
   "pnpm": {
     "peerDependencyRules": {
@@ -32,5 +32,8 @@
     "printWidth": 120,
     "proseWrap": "always"
   },
-  "packageManager": "pnpm@9.2.0+sha512.98a80fd11c2e7096747762304106432b3ddc67dcf54b5a8c01c93f68a2cd5e05e6821849522a06fb76284d41a2660d5e334f2ee3bbf29183bf2e739b1dafa771"
+  "packageManager": "pnpm@9.2.0+sha512.98a80fd11c2e7096747762304106432b3ddc67dcf54b5a8c01c93f68a2cd5e05e6821849522a06fb76284d41a2660d5e334f2ee3bbf29183bf2e739b1dafa771",
+  "dependencies": {
+    "markdown-it-mathjax3": "^4.3.2"
+  }
 }

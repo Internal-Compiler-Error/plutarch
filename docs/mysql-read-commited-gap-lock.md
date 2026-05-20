@@ -31,7 +31,7 @@ Consider the following query, where `id` is a primary key:
 SELECT * FROM sales WHERE id <= 2000
 ```
 Since we are using an inequality here, there could be more than one row that matches this criteria.
-If we were to filter via `WHERE id = 2000`, then we will have at most one row.
+If we were to filter via `WHERE id = 2000`, then we would have at most one row.
 
 Now what should happen if this were to be executed in a transaction?
 ```sql
